@@ -41,7 +41,24 @@ private fun week03Variables() {
     println("Course : $courseName")
     println("week : $week")
 
+    println("========Kotlin variables ========")
 
+    //val (immutable) vs (mutable)
+    val name = "Android"
+    var version = 8
+
+    println("Hi $name $version")
+
+    val age: Int = 24
+    val height: Double = 177.7
+    val isStudent: Boolean = false
+
+    println("Age :$age Height : $height Student: $isStudent")
+
+    //var nickname:String = null
+    var nickname:String? = null  //?를 써서 null 할당 가능
+    nickname = "mirae"
+    println("Nickname : $nickname ${nickname?.length}") //null할당가능 변수 ? 붙임
 }
 
 @Composable
