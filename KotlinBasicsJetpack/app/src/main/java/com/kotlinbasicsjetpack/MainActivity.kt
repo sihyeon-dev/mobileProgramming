@@ -28,6 +28,7 @@ class MainActivity : ComponentActivity() {
             }
         }
         week03Variables()
+        week03Functions()
     }
 }
 
@@ -59,6 +60,31 @@ private fun week03Variables() {
     var nickname:String? = null  //?를 써서 null 할당 가능
     nickname = "mirae"
     println("Nickname : $nickname ${nickname?.length}") //null할당가능 변수 ? 붙임
+}
+
+private fun week03Functions(){
+//    println("Week 02: Functions")
+//
+    fun greet(name: String) = "Hello, $name!"
+
+    println(greet("Android developer"))
+
+    println("== Kotlin Functions ==")
+
+//    fun greet(name: String): String { //변수명이 먼저 오고 그 뒤에 타입 또 그 뒤는 리턴타입. 즉 타입이 뒤에 붙음
+//        return "Hello, $name!"
+//    }
+
+    fun add(a: Int, b: Int) = a + b //이런식으로 짧게도 가능
+
+    fun introduce(name: String, age: Int = 19){ //디폴트 매개변수 값이 안들어오면 디폴트값으로 씀
+        println("My name is $name and I'm $age years old")
+    }
+
+    println(greet("Kotlin"))
+    println("Sum: ${add(5, -71)}")
+    introduce("Kim", 7)
+    introduce("Park")
 }
 
 @Composable
