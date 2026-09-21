@@ -85,7 +85,22 @@ private fun week03Functions(){
     println("Sum: ${add(5, -71)}")
     introduce("Kim", 7)
     introduce("Park")
+
+    fun printALL(vip : Boolean, name : String){
+        println("$vip, $name")
+    }
+    //printALL(vip:true, name:"dy")
+    printALL(name = "mirae", vip = true) //인수를 지명함
+
+    //가변인수
+    fun printMany(vararg msg:String){
+        for(m in msg) println(m)
+    }
+
 }
+
+
+
 
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
