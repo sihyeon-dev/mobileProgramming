@@ -12,7 +12,7 @@
         android:text="인사 앱"
         android:textSize="24sp"
         android:textStyle="bold"
-        android:layout_marginBottom="36dp" />
+        android:layout_marginBottom="32dp" />
 
     <EditText
         android:id="@+id/editTextName"
@@ -28,7 +28,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="인사하기"
-        android:layout_marginBottom="30dp" />
+        android:layout_marginBottom="16dp" />
 
     <TextView
         android:id="@+id/textViewGreeting"
